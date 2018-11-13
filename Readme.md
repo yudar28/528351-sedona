@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Daria Yudina](https://up.htmlacademy.ru/htmlcss/23/user/528351).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Поданев] (https://htmlacademy.ru/profile/mpodanev).
 
 ---
 
