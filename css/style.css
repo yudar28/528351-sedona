@@ -3,7 +3,8 @@ body {
 
 	font-family: "PTSans", Arial, sans-serif;
 	font-size: 14px;
-	line-height: 24px;
+	line-height: 26px;
+	font-weight: bold;
 	color: #000000;
 	text-transform: uppercase;
 
@@ -18,7 +19,7 @@ a {
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 1.857;
+  line-height: 26px;
   
 }
 
@@ -45,12 +46,11 @@ a {
 }
 
 .intro {
-	background-image: url("img/background photo.jpg");
+	background-image: url("../img/bg.jpg");
 	background-color: #ffffff;
 	background-repeat: no-repeat;
 	background-position: top center;
 }
-
 
 .about-sedona {
 	font-family: "PTSans bold", Arial, sans-serif;
@@ -58,6 +58,7 @@ a {
 	text-transform: uppercase;
     font-size: 21px;
     color: #000000;
+    text-align: center;
 }
 
 .about-advantages {
@@ -65,10 +66,17 @@ a {
 	text-transform: uppercase;
 	font-size: 14px;
 	color: #929292;
+	text-align: center;
 }
 
 .about-sedona .interisting {
 	font-size: 35px;
+	text-align: center;
+}
+
+.about-sedona a {
+	color: #000000;
+	text-align: center;
 }
 
 .popap h2 {
@@ -79,4 +87,102 @@ a {
 	text-transform: uppercase;
     font-size: 21px;
     color: #ffffff;
+    text-align: center;
+}
+
+.popap h2:hover,
+.popap h2:focus {
+	background-color: #604e43;
+}
+
+.popap h2:active {
+	background-color: #503e33;
+
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.form-find-hotels input {
+	font: inherit;
+
+	color: #000000;
+	border: none;
+
+	background-color: #f2f2f2;
+}
+
+.form-find-hotels input:hover {
+	background-color: #ebebeb;
+}
+
+.form-find-hotels input:focus {
+	background-color: #ffffff;
+
+	border: 2px solid #ebebeb;
+}
+
+.button {
+	font: inherit;
+
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	background-color: #81b3d2;
+	border: none;
+}
+
+.button:hover {
+	background-color: #669ec0;
+}
+
+.button:active {
+	background-color: #5496bd;
+
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.minus,
+.plus {
+	font: inherit;
+
+	color: #a9a9a9;
+
+	background-color: #f2f2f2;
+	border: none;
+}
+
+.main-footer {
+	background-color: #ffffff;
+}
+
+.main-footer p {
+	font-size: 21px;
+}
+
+.social-button a {
+	text-decoration: none;
+	color: #ffffff;
+
+	background-color: #81b3d2;
+}
+
+.social-button a:hover {
+	background-color: #669ec0;
+}
+
+.social-button a:active {
+	background-color: #5496bd;
+
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer p b {
+	font-size: 14px;
+	font-family: "PTSans Regular", Arial, sans-serif;
+	font-weight: 400;
+}
+
+.logo-htmlacademy {
+	fill: #000000;
 }
