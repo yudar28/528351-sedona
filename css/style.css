@@ -15,6 +15,10 @@ a {
 	text-decoration: none;
 }
 
+li {
+	list-style-type: none;
+}
+
 .main-navigation {
   color: #000000;
   font-weight: bold;
@@ -79,7 +83,7 @@ a {
 	text-align: center;
 }
 
-.popap h2 {
+.popap h2 a {
 	background-color: #766357;
 
 	font-family: "PTSans bold", Arial, sans-serif;
@@ -90,12 +94,12 @@ a {
     text-align: center;
 }
 
-.popap h2:hover,
-.popap h2:focus {
+.popap h2 a:hover,
+.popap h2 a:focus {
 	background-color: #604e43;
 }
 
-.popap h2:active {
+.popap h2 a:active {
 	background-color: #503e33;
 
 	color: rgba(255, 255, 255, 0.3);
@@ -120,7 +124,7 @@ a {
 	border: 2px solid #ebebeb;
 }
 
-.button {
+form .button {
 	font: inherit;
 
 	text-align: center;
@@ -132,11 +136,12 @@ a {
 	border: none;
 }
 
-.button:hover {
+form .button:hover,
+form .button:focus {
 	background-color: #669ec0;
 }
 
-.button:active {
+form .button:active {
 	background-color: #5496bd;
 
 	color: rgba(255, 255, 255, 0.3);
@@ -167,7 +172,8 @@ a {
 	background-color: #81b3d2;
 }
 
-.social-button a:hover {
+.social-button a:hover,
+.social-button a:focus {
 	background-color: #669ec0;
 }
 
@@ -183,6 +189,99 @@ a {
 	font-weight: 400;
 }
 
-.logo-htmlacademy {
-	fill: #000000;
+.logo-htmlacademy svg path {
+	fill: black;
+}
+
+.logo-htmlacademy svg path:hover,
+.logo-htmlacademy svg path:focus {
+	fill: #5496bd;
+}
+
+.logo-htmlacademy svg path:active {
+	fill: #bdbbbc;
+}
+
+
+.hotels-items h3 a {
+	font-size: 21px;
+	color: #000000;
+	line-height: 26px;
+}
+
+.hotels-items .hotels-category,
+.hotels-items .hotels-price {
+	font-size: 14px;
+	font-family: "PTSans Regular", Arial, sans-serif;
+	color: #949494;
+	line-height: 21px;
+	font-weight: 400;
+}
+
+
+a.button .action-hotel {
+	background-color: #766357;
+
+	font-family: "PTSans bold", Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+    font-size: 21px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.about-hotel {
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 21px;
+
+	background-color: #81b3d2;
+	border: none;
+}
+
+.about-hotel:hover,
+.about-hotel:focus {
+	background-color: #669ec0;
+}
+
+.about-hotel:active {
+	background-color: #5496bd;
+
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.action-hotel{
+	background-color: #766357;
+
+	font-family: "PTSans bold", Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 21px;
+}
+
+.action-hotel:hover,
+.action-hotel:focus {
+	background-color: #604e43;
+}
+
+.action-hotel:active {
+	background-color: #503e33;
+
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.rating {
+	font-size: 14px;
+	font-family: "PTSans Regular", Arial, sans-serif;
+	color: #949494;
+	line-height: 21px;
+	font-weight: 400;
+
+	background-color: #f2f2f2;
 }
