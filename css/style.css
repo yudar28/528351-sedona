@@ -56,7 +56,7 @@ li {
 	background-position: top center;
 }
 
-.about-sedona {
+.interisting {
 	font-family: "PTSans bold", Arial, sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -65,21 +65,21 @@ li {
     text-align: center;
 }
 
+.about-sedona {
+	font-family: "PTSans Regular", Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 14px;
+	color: #929292;
+	text-align: center;
+	line-height: 21px;
+}
+
 .about-advantages {
 	font-family: "PTSans Regular", Arial, sans-serif;
 	text-transform: uppercase;
 	font-size: 14px;
 	color: #929292;
-	text-align: center;
-}
-
-.about-sedona .interisting {
-	font-size: 35px;
-	text-align: center;
-}
-
-.about-sedona a {
-	color: #000000;
 	text-align: center;
 }
 
