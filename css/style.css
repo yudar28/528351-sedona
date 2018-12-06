@@ -285,3 +285,33 @@ a.button .action-hotel {
 
 	background-color: #f2f2f2;
 }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/*Сетки*/
+
+.main-header {
+	margin: 0;
+	padding: 0;
+}
+
+.site-navigation {
+	display: flex;
+}
+
+.site-navigation li {
+	width: 239px;
+}
+
+.site-navigation li:nth-child(3) {
+	width: 244px;
+	height: 56px;
+}
+
+
