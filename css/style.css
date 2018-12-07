@@ -9,6 +9,8 @@ body {
 	text-transform: uppercase;
 
 	background: #ffffff;
+
+	width: 1200px;
 }
 
 a {
@@ -51,28 +53,40 @@ li {
 
 .intro {
 	background-image: url("../img/bg.jpg");
+	background-size: cover;
 	background-color: #ffffff;
 	background-repeat: no-repeat;
 	background-position: top center;
+}
+
+.about-sedona {
+	font-family: "PTSans bold", Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 21px;
+	color: #000000;
+	text-align: center;
+	line-height: 26px;
 }
 
 .interisting {
 	font-family: "PTSans bold", Arial, sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
-    font-size: 21px;
+    font-size: 30px;
     color: #000000;
     text-align: center;
+    line-height: 36px;
 }
 
-.about-sedona {
+.travel-sedona {
 	font-family: "PTSans Regular", Arial, sans-serif;
-	text-transform: uppercase;
 	font-weight: 400;
+	text-transform: uppercase;
 	font-size: 14px;
 	color: #929292;
 	text-align: center;
-	line-height: 21px;
+	line-height: 26px;
 }
 
 .about-advantages {
@@ -83,23 +97,26 @@ li {
 	text-align: center;
 }
 
-.popap h2 a {
+.popap h2 {
 	background-color: #766357;
 
 	font-family: "PTSans bold", Arial, sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
     font-size: 21px;
-    color: #ffffff;
     text-align: center;
 }
 
-.popap h2 a:hover,
-.popap h2 a:focus {
+.popap h2 a {
+	color: #ffffff;
+}
+
+.popap h2:hover,
+.popap h2:focus {
 	background-color: #604e43;
 }
 
-.popap h2 a:active {
+.popap h2:active {
 	background-color: #503e33;
 
 	color: rgba(255, 255, 255, 0.3);
@@ -207,6 +224,7 @@ form .button:active {
 	font-size: 21px;
 	color: #000000;
 	line-height: 26px;
+
 }
 
 .hotels-items .hotels-category,
@@ -305,13 +323,155 @@ a.button .action-hotel {
 	display: flex;
 }
 
+.site-navigation ul {
+	margin: 0;
+	padding: 0;
+}
+
 .site-navigation li {
 	width: 239px;
+	text-align: center;
 }
 
-.site-navigation li:nth-child(3) {
-	width: 244px;
-	height: 56px;
+.site-navigation li:nth-child(2) {
+	margin-right: 244px;
 }
 
+.main-navigation a img {
+	position: absolute;
+	left: 530px;
+	top: 0px;
+}
 
+.intro {
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.intro img {
+	margin: auto;
+	padding-top: 76px;
+	padding-bottom: 24px;
+}
+
+.advantages {
+	display: flex;
+	flex-direction: column;
+}
+
+.about-sedona {
+	width: 600px;
+	padding: 0;
+	margin: auto;
+	margin-top: 61px;
+}
+
+.about-advantages {
+	padding: 0;
+	margin: auto;
+	margin-top: 35px;
+	margin-bottom: 56px;
+}
+
+.finding-hotel {
+	display: flex;
+	flex-direction: column;
+
+	padding: 0;
+	margin: 0;
+}
+
+.interisting {
+	padding: 0;
+	margin: auto;
+	margin-top: 58px;
+	margin-bottom: 35px;
+}
+
+.travel-sedona {
+	width: 450px;
+	padding: 0;
+	margin: auto;
+	margin-bottom: 51px;
+}
+
+.popap {
+	display: flex;
+	flex-direction: column;
+
+	padding: 0;
+	margin: 0;
+}
+
+.popap h2 {
+	width: 568px;
+	margin: auto;
+	padding-top: 34px;
+	padding-bottom: 34px;
+	text-align: center;
+	
+}
+
+.popap form {
+	background-color: grey;
+	width: 568px;
+	height: 395px;
+	margin: auto;
+}
+
+.map {
+	height: 473px;
+}
+
+.main-footer {
+	display: flex;
+	justify-content: space-around;
+}
+
+.hotels {
+	display: flex;
+	flex-direction: column;
+
+	padding: 0;
+	margin: 0;
+
+	background-color: pink;
+}
+
+.hotels-items {
+	border-top: 1px solid #e5e5e5;
+
+	padding: 0;
+	margin: 0;
+}
+
+.hotels-items:last-child {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.contener-hotels {
+	display: flex;
+
+	margin-left: 72px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 0;
+}
+
+.contener-hotels img {
+	margin-right: 30px;
+}
+
+.rent-hotel {
+	padding: 0;
+
+	width: 780px;
+}
+
+.hotels-items h3,
+.hotels-items p {
+	margin: 0;
+}
