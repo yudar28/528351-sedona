@@ -1,10 +1,10 @@
 body {
 	margin: 0;
 
-	font-family: "PTSans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 26px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
 
@@ -21,14 +21,26 @@ li {
 	list-style-type: none;
 }
 
+.contener {
+	margin: 0 auto;
+}
+
+.main-header {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
 .main-navigation {
   color: #000000;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 26px; 
 }
 
 .site-navigation {
+	display: flex;
+
 	list-style: none;
 }
 
@@ -50,60 +62,161 @@ li {
 	color: #87776c;
 }*/
 
+ul.site-navigation  {
+	margin: 0;
+	padding: 0;
+}
+
+.site-navigation li {
+    text-align: left;
+
+	box-sizing: border-box;
+	width: 239px;
+	/*margin: 0;*/
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 72px;
+	padding-right: auto;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:last-child {
+	box-sizing: border-box;
+	text-align: right;
+	padding-right: 72px;
+}
+
+.site-navigation li:nth-child(2) {
+	margin-right: 244px;
+}
+
+.main-navigation a img {
+	position: absolute;
+	left: 530px;
+	top: 0px;
+}
+
 .intro {
 	background-image: url("../img/bg.jpg");
 	background-size: cover;
 	background-color: #ffffff;
 	background-repeat: no-repeat;
 	background-position: top center;
+
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.intro img {
+	margin: auto;
+	padding-top: 76px;
+	padding-bottom: 24px;
+}
+
+.advantages {
+	display: flex;
+	flex-direction: column;
 }
 
 .about-sedona {
-	font-family: "PTSans bold", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 21px;
 	color: #000000;
 	text-align: center;
 	line-height: 26px;
+
+	width: 600px;
+	padding: 0;
+	margin: auto;
+	margin-top: 59px;
+}
+
+.about-advantages {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #929292;
+	text-align: center;
+
+	padding: 0;
+	margin: auto;
+	margin-top: 26px;
+	margin-bottom: 56px;
 }
 
 .interisting {
-	font-family: "PTSans bold", Arial, sans-serif;
-	font-weight: bold;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-weight: 700;
 	text-transform: uppercase;
     font-size: 30px;
     color: #000000;
     text-align: center;
     line-height: 36px;
+
+    padding: 0;
+	margin: auto;
+	margin-top: 58px;
+	margin-bottom: 21px;
+}
+
+.finding-hotel {
+	display: flex;
+	flex-direction: column;
+
+	padding: 0;
+	margin: 0;
 }
 
 .travel-sedona {
-	font-family: "PTSans Regular", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;
 	font-size: 14px;
 	color: #929292;
 	text-align: center;
 	line-height: 26px;
+
+	width: 568px;
+	padding: 0;
+	margin: auto;
+	margin-bottom: 45px;
 }
 
-.about-advantages {
-	font-family: "PTSans Regular", Arial, sans-serif;
-	text-transform: uppercase;
-	font-size: 14px;
-	color: #929292;
-	text-align: center;
+.contener-form {
+	position: absolute;
+	top: 86px;
+	left: 316px;
+}
+
+.popap {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	padding: 0;
+	margin: 0;
 }
 
 .popap h2 {
 	background-color: #766357;
 
-	font-family: "PTSans bold", Arial, sans-serif;
-	font-weight: bold;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-weight: 700;
 	text-transform: uppercase;
     font-size: 21px;
     text-align: center;
+
+    width: 568px;
+	margin: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
 }
 
 .popap h2 a {
@@ -121,11 +234,19 @@ li {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+.popap form {
+	/*position: absolute;*/
+
+	width: 568px;
+	height: 395px;
+	margin: auto;
+}
+
 .form-find-hotels input {
 	font: inherit; 
 
-	font-family: "PTSans bold", Arial, sans-serif;
-	font-weight: bold;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-weight: 700;
 	font-size: 14px;
 	text-transform: uppercase;
 	color: #000000;
@@ -148,8 +269,97 @@ li {
 	background-color: #f2f2f2;
 }
 
+.form-find-hotels {
+	display: flex;
+	flex-direction: column;
+
+	margin: 0;
+	padding: 0;
+}
+
+.form-find-hotels p,
+.form-find-hotels .button {
+	margin-left: 55px;
+	margin-right: 55px;
+
+}
+
+.form-find-hotels p {
+	display: flex;
+
+	width: 458px;
+
+	margin: 0px;
+	margin-left: 55px;
+	padding: 0px;
+}
+
+.form-find-hotels input[type="text"] {
+	width: 334px;
+	height: 38px;
+
+	padding-left: 12px;
+}
+
+.form-find-hotels p:first-child input[type="text"] {
+	margin-left: 20px;
+	margin-top: 55px;
+	margin-bottom: 29px;
+}
+
+.form-find-hotels p:nth-child(2) input[type="text"] {
+	margin-bottom: 30px;
+	margin-left: 16px;
+}
+
+.days {
+	position: relative;
+}
+
+.days label::after {
+	content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" fill="#bdbdbd" /><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" fill="#bdbdbd"/></svg>');
+
+	position: absolute;
+	left: 428px;
+	top: 8px;
+}
+
+.days:first-child label::after {
+	top: 63px;
+}
+
+.days label:hover:after,
+.days label:focus:after {
+	content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" fill="#000000" /><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" fill="#000000"/></svg>');
+}
+
+.days label:active:after {
+	content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" fill="#81b3d2" /><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" fill="#81b3d2"/></svg>');
+}
+
+.form-find-hotels input[type="number"] {
+	width: 38px;
+	height: 38px;
+
+	text-align: right;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	margin: 0;
+	padding: 0;
+}
+
+.form-find-hotels .button {
+	height: 58px;
+}
+
 form .button {
 	font: inherit;
+
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 26px;
 
 	text-align: center;
 	color: #ffffff;
@@ -245,7 +455,7 @@ form .button:active {
 
 .adults {
 	padding-top: 5px;
-	margin-right: 25px;
+	margin-right: 41px;
 }
 
 .kids {
@@ -254,8 +464,15 @@ form .button:active {
 	margin-right: 27px;
 }
 
+.map {
+	height: 473px;
+}
+
 .main-footer {
 	background-color: #ffffff;
+
+	display: flex;
+	justify-content: space-around;
 }
 
 .main-footer p {
@@ -263,12 +480,19 @@ form .button:active {
 
 	font-size: 21px;
 	vertical-align: middle;
+
+	padding: 0;
+	margin-left: 34px;
+    margin-top: 46px;
 }
 
 .social-button {
 	display: flex;
 	flex-wrap: wrap;
   	justify-content: space-between;
+
+  	margin-left: 23px;
+    margin-top: 35px;
 }
 
 .social-button li {
@@ -301,7 +525,7 @@ form .button:active {
 
 .main-footer p b {
 	font-size: 14px;
-	font-family: "PTSans Regular", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: 400;
 	vertical-align: middle;
 
@@ -325,7 +549,7 @@ form .button:active {
 
 .hotels-items h3 a {
 	font-size: 21px;
-	font-family: "PTSans Bold", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: 700;
 	color: #000000;
 	line-height: 26px;
@@ -343,7 +567,7 @@ form .button:active {
 .hotels-items .hotels-category,
 .hotels-items .hotels-price {
 	font-size: 14px;
-	font-family: "PTSans Regular", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	color: #949494;
 	line-height: 21px;
 	font-weight: 400;
@@ -353,8 +577,8 @@ form .button:active {
 a.button .action-hotel {
 	background-color: #766357;
 
-	font-family: "PTSans bold", Arial, sans-serif;
-	font-weight: bold;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-weight: 700;
 	text-transform: uppercase;
     font-size: 21px;
     color: #ffffff;
@@ -418,8 +642,8 @@ a.button .action-hotel {
 
 	background-color: #766357;
 
-	font-family: "PTSans bold", Arial, sans-serif;
-	font-weight: bold;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-weight: 700;
 	text-transform: uppercase;
     font-size: 14px;
     color: #ffffff;
@@ -484,7 +708,7 @@ a.button .action-hotel {
 
 .rating {
 	font-size: 14px;
-	font-family: "PTSans Regular", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	color: #949494;
 	line-height: 21px;
 	font-weight: 400;
@@ -506,209 +730,6 @@ a.button .action-hotel {
   width: 1px;
   height: 1px;
   margin: -1px;
-}
-
-/*Сетки*/
-
-.main-header {
-	margin: 0;
-	padding: 0;
-}
-
-.site-navigation {
-	display: flex;
-}
-
-.site-navigation ul {
-	margin: 0;
-	padding: 0;
-}
-
-.site-navigation li {
-	width: 239px;
-	text-align: center;
-}
-
-.site-navigation li:nth-child(2) {
-	margin-right: 244px;
-}
-
-.main-navigation a img {
-	position: absolute;
-	left: 530px;
-	top: 0px;
-}
-
-.intro {
-	margin: 0;
-	padding: 0;
-
-	display: flex;
-	flex-direction: column;
-}
-
-.intro img {
-	margin: auto;
-	padding-top: 76px;
-	padding-bottom: 24px;
-}
-
-.advantages {
-	display: flex;
-	flex-direction: column;
-}
-
-.about-sedona {
-	width: 600px;
-	padding: 0;
-	margin: auto;
-	margin-top: 61px;
-}
-
-.about-advantages {
-	padding: 0;
-	margin: auto;
-	margin-top: 35px;
-	margin-bottom: 56px;
-}
-
-.finding-hotel {
-	display: flex;
-	flex-direction: column;
-
-	padding: 0;
-	margin: 0;
-}
-
-.interisting {
-	padding: 0;
-	margin: auto;
-	margin-top: 58px;
-	margin-bottom: 35px;
-}
-
-.travel-sedona {
-	width: 450px;
-	padding: 0;
-	margin: auto;
-	margin-bottom: 51px;
-}
-
-.popap {
-	display: flex;
-	flex-direction: column;
-
-	padding: 0;
-	margin: 0;
-}
-
-.popap h2 {
-	width: 568px;
-	margin: auto;
-	padding-top: 34px;
-	padding-bottom: 34px;
-	text-align: center;
-	
-}
-
-.popap form {
-	width: 568px;
-	height: 395px;
-	margin: auto;
-}
-
-.form-find-hotels {
-	display: flex;
-	flex-direction: column;
-
-	margin: 0;
-	padding: 0;
-}
-
-.form-find-hotels p,
-.form-find-hotels .button {
-	margin-left: 55px;
-	margin-right: 55px;
-
-}
-
-.form-find-hotels p {
-	display: flex;
-
-	width: 458px;
-
-	margin: 0px;
-	margin-left: 55px;
-	padding: 0px;
-}
-
-.form-find-hotels input[type="text"] {
-	width: 334px;
-	height: 38px;
-
-	padding-left: 12px;
-}
-
-.form-find-hotels p:first-child input[type="text"] {
-	margin-left: 5px;
-	margin-top: 55px;
-	margin-bottom: 29px;
-}
-
-.form-find-hotels p:nth-child(2) input[type="text"] {
-	margin-bottom: 30px;
-}
-
-.days {
-	position: relative;
-}
-
-.days label::after {
-	content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" fill="#bdbdbd" /><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" fill="#bdbdbd"/></svg>');
-
-	position: absolute;
-	left: 428px;
-	top: 8px;
-
-}
-
-.days:first-child label::after {
-	top: 63px;
-}
-
-.days label:hover:after,
-.days label:focus:after {
-	content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" fill="#000000" /><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" fill="#000000"/></svg>');
-}
-
-.days label:active:after {
-	content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" fill="#81b3d2" /><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" fill="#81b3d2"/></svg>');
-}
-
-.form-find-hotels input[type="number"] {
-	width: 38px;
-	height: 38px;
-
-	text-align: right;
-	color: #ffffff;
-	vertical-align: middle;
-	text-transform: uppercase;
-
-	margin: 0;
-	padding: 0;
-}
-
-.form-find-hotels .button {
-	height: 58px;
-}
-
-.map {
-	height: 473px;
-}
-
-.main-footer {
-	display: flex;
-	justify-content: space-around;
 }
 
 .hotels {
