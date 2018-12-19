@@ -472,7 +472,7 @@ form .button:active {
 	background-color: #ffffff;
 
 	display: flex;
-	justify-content: space-around;
+/*	justify-content: space-around;*/
 }
 
 .main-footer p {
@@ -481,8 +481,7 @@ form .button:active {
 	font-size: 21px;
 	vertical-align: middle;
 
-	padding: 0;
-	margin-left: 34px;
+	margin-left: 133px;
     margin-top: 46px;
 }
 
@@ -491,8 +490,8 @@ form .button:active {
 	flex-wrap: wrap;
   	justify-content: space-between;
 
-  	margin-left: 23px;
-    margin-top: 35px;
+  	margin-left: 216px;
+    margin-top: 36px;
 }
 
 .social-button li {
@@ -503,7 +502,7 @@ form .button:active {
   	height: 45px;
 
   	margin-right: 6px;
-  	padding-top: 3px;
+  	padding-top: 4px;
 
   	background-color: #81b3d2;
 }
@@ -530,7 +529,13 @@ form .button:active {
 	vertical-align: middle;
 
 	padding-top: 7px;
-	margin-right: 6px;
+	margin-right: 8px;
+	margin-left: 89px;
+    margin-top: -7px;
+}
+
+.logo-htmlacademy {
+	margin-top: -8px;
 }
 
 .logo-htmlacademy svg path {
@@ -589,6 +594,8 @@ a.button .action-hotel {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
+
+	margin-top: -4px;
 }
 
 .rent-hotel h3 {
@@ -596,6 +603,12 @@ a.button .action-hotel {
 	height: 23px;
 
 	padding-bottom: 6px;
+	margin-top: -4px;
+}
+
+.rent-hotel h3 a {
+	padding-top: -3px;
+	margin-top: -3px;
 }
 
 .rent-hotel .hotels-category {
@@ -664,10 +677,15 @@ a.button .action-hotel {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+.status {
+	margin-top: 29px;
+}
+
 .stars {
 	width: 110px;
 	height: 17px;
 	margin: 0;
+
 }
 
 .hotels-items:first-child .stars {
@@ -720,7 +738,8 @@ a.button .action-hotel {
 	height: 24px;
 
 	margin: 0;
-	margin-top: 48px;
+	margin-top: 47px;
+    padding-left: 2px;
 	padding-top: 3px;
 }
 
@@ -755,13 +774,13 @@ a.button .action-hotel {
 	display: flex;
 
 	margin-left: 72px;
-	margin-top: 30px;
 	margin-bottom: 30px;
 	padding: 0;
 }
 
 .contener-hotels img {
 	margin-right: 30px;
+	margin-top: 30px;
 }
 
 .rent-hotel {
@@ -774,4 +793,12 @@ a.button .action-hotel {
 .hotels-items .rent-hotel h3,
 .hotels-items .rent-hotel p {
 	margin: 0;
+}
+
+.hotels-items .rent-hotel h3 {
+	margin-top: 25px;
+}
+
+.hotels-items .rent-hotel p {
+	margin-top: 4px;
 }
