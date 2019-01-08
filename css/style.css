@@ -532,12 +532,12 @@ ul.site-navigation  {
   top: 63px;
 }
 
-.days label:hover .calendar,
-.days label:focus .calendar {
+.days .calendar:hover,
+.days .calendar:focus {
   background-image: url("../img/calendar-black.svg");
 }
 
-.days label:active .calendar {
+.days .calendar:active {
   background-image: url("../img/calendar-blue.svg");
   border: none;
 }
@@ -671,6 +671,10 @@ form .button:active {
 
 .map {
   height: 473px;
+}
+
+.map iframe {
+  border: 0;
 }
 
 .main-footer {
