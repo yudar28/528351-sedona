@@ -86,8 +86,8 @@
         </div>
 
         <section class="popap">
-          <h2> <a href="#"> Поиск гостиницы в седоне </a></h2>
-          <div class="contener-form">
+          <h2> <a class="find-link" href="#"> Поиск гостиницы в седоне </a></h2>
+          <div class="contener-form modal-show">
             <form class="form-find-hotels" method="post" action="https://echo.htmlacademy.ru/">
               <p class="days">
                 <label>
@@ -99,7 +99,7 @@
               <p class="days">
                 <label>
                   Дата выезда:
-                <input type="text" name="date-out" value="" placeholder="4 июля 2017">
+                <input class="date-out" type="text" name="date-out" value="" placeholder="4 июля 2017">
                 </label>
                 <button class="calendar" type="button"><span class="visually-hidden"> Календарь</span> </button>
               </p>
@@ -162,6 +162,44 @@
         </p>
       </div>  
     </footer>
+
+    <script type="text/javascript">
+      var link = document.querySelector(".find-link");
+
+      var popap = document.querySelector(".contener-form");
+
+      var datein = popap.querySelector(".date-in");
+      var dateout = popap.querySelector(".date-out");
+      var adults = popap.querySelector("#adults");
+      var kids = popap.querySelector("#kids");
+
+      var form = popap.querySelector("form");
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popap.classList.toggle("modal-show");
+        datein.focus();
+      });
+
+      form.addEventListener("submit", function (evt) {
+        if (!datein.value || !dateout.value) {
+          evt.preventDefault();
+          console.log("Введите дату заезда и дату выезда");
+        } else if (!adults.value || !kids.value) {
+          evt.preventDefault();
+          console.log("Введите количество взрослых и детей");
+        }
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          evt.preventDefault();
+        if (popap.classList.contains("contener-form")) {
+          popap.classList.add("modal-show");
+      }
+    }
+  });
+    </script>
 
   </body>
 

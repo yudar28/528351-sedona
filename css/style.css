@@ -547,7 +547,7 @@ ul.site-navigation  {
   height: 38px;
 
   text-align: right;
-  color: #ffffff;
+  color: #000000;
   vertical-align: middle;
   text-transform: uppercase;
 
@@ -668,6 +668,27 @@ form .button:active {
   margin-left: 53px;
   margin-right: 27px;
 }
+
+@keyframes opac {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.modal-show {
+  display: none;
+
+  animation: opac 5s;
+}
+
 
 .map {
   height: 473px;
