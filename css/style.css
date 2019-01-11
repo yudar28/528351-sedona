@@ -669,26 +669,23 @@ form .button:active {
   margin-right: 27px;
 }
 
-@keyframes opac {
-  0% {
-    opacity: 1;
+@keyframes bounce {
+  from {
+    transform: translateY(-100px);
   }
 
-  50% {
-    opacity: 0.5;
-  }
-
-  100% {
-    opacity: 0;
+  to {
+    transform: translateY(0);
   }
 }
 
 .modal-show {
   display: none;
-
-  animation: opac 5s;
 }
 
+.modal-animation {
+  animation: bounce 1s;
+}
 
 .map {
   height: 473px;
